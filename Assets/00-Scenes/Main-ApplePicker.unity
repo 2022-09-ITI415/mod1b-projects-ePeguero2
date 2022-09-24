@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 792234108}
   - component: {fileID: 792234107}
   - component: {fileID: 792234106}
+  - component: {fileID: 792234109}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -207,6 +208,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &792234109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792234105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4231f2e107d909f4994d757e4cb61e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 1325845131469583919, guid: ba43b33a5b78fef46b4b6c9bd05242ec, type: 3}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1 &1572004184
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9d81b6dc8c97e4880ca36c0693786b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
+  applePrefab: {fileID: 188829318038778502, guid: 30f912f867678614d87422b65ccc6394, type: 3}
   speed: 5
   leftAndRightEdge: 20
   chanceToChangeDirections: 0.02
@@ -330,9 +347,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7434245329789395879, guid: 69aa371a70310b547b17379bf4e09f82, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7434245329930633492, guid: 69aa371a70310b547b17379bf4e09f82, type: 3}
       propertyPath: m_Name
       value: AppleTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 7434245329930633492, guid: 69aa371a70310b547b17379bf4e09f82, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7434245329930633515, guid: 69aa371a70310b547b17379bf4e09f82, type: 3}
       propertyPath: m_RootOrder
@@ -377,6 +402,14 @@ PrefabInstance:
     - target: {fileID: 7434245329930633515, guid: 69aa371a70310b547b17379bf4e09f82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7434245330105637644, guid: 69aa371a70310b547b17379bf4e09f82, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082650909742563221, guid: 69aa371a70310b547b17379bf4e09f82, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69aa371a70310b547b17379bf4e09f82, type: 3}
