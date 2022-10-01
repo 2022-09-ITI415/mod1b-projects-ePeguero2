@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/00-Scenes/ApplePicker.unity
-    guid: a76078966e5564d698c1ed755489041f
+    path: Assets/00-Scenes/Main-MissionDemolition.unity
+    guid: 36a4f7af764a74bfab5a5ff20375bcdb
   m_configObjects: {}
