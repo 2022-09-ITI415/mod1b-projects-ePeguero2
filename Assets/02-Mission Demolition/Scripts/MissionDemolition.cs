@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public enum GameMode
-{ // b
+{ 
     idle,
     playing,
     levelEnd
@@ -47,18 +47,18 @@ public class MissionDemolition : MonoBehaviour
         }
         // Destroy old projectiles if they exist
         GameObject[] gos = GameObject.FindGameObjectsWithTag("Projectile");
-        for (int i = 0; i < gos.Length; i++)
+        foreach (GameObject GameObject.FindGameObjectsWithTag("Projectile");
         {
-            GameObject pTempin = gos[i];
-            Destroy(pTempin);
+            Destroy();
         }
+
         // Instantiate the new castle
         castle = Instantiate<GameObject>(castles[level]);
         castle.transform.position = castlePos;
         shotsTaken = 0;
 
         // Reset the camera
-        SwitchView("wShow Both");
+        SwitchView("Show Both");
         ProjectileLine.S.Clear();
         // Reset the goal
         Goal.goalMet = false;
@@ -79,10 +79,13 @@ public class MissionDemolition : MonoBehaviour
         // Check for level end
         if ((mode == GameMode.playing) && Goal.goalMet)
         {
+
             // Change mode to stop checking for level end
             mode = GameMode.levelEnd;
+
             // Zoom out
             SwitchView("Show Both");
+
             // Start the next level in 2 seconds
             Invoke("NextLevel", 2f);
         }
@@ -99,7 +102,7 @@ public class MissionDemolition : MonoBehaviour
         StartLevel();
     }
     public void SwitchView(string eView = "")
-    { // c
+    { 
         if (eView == "")
         {
             eView = uitButton.text;
@@ -121,9 +124,9 @@ public class MissionDemolition : MonoBehaviour
                 break;
         }
     }
-    // Static method that allows code anywhere to increment shotsTaken
+    
     public static void ShotFired()
-    { // d
+    {
         S.shotsTaken++;
     }
 }
