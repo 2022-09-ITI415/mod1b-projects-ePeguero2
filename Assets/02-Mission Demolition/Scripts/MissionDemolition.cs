@@ -47,18 +47,17 @@ public class MissionDemolition : MonoBehaviour
         }
         // Destroy old projectiles if they exist
         GameObject[] gos = GameObject.FindGameObjectsWithTag("Projectile");
-        foreach (GameObject GameObject.FindGameObjectsWithTag("Projectile");
+        for (int i = 0; i < gos.Length; i++)
         {
-            Destroy();
+            GameObject pTempin = gos[i];
         }
-
         // Instantiate the new castle
         castle = Instantiate<GameObject>(castles[level]);
         castle.transform.position = castlePos;
         shotsTaken = 0;
 
         // Reset the camera
-        SwitchView("Show Both");
+        SwitchView("wShow Both");
         ProjectileLine.S.Clear();
         // Reset the goal
         Goal.goalMet = false;
