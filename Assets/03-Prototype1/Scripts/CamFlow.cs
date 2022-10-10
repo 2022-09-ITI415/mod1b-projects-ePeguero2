@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlowCam : MonoBehaviour
+public class CamFlow : MonoBehaviour
 {
     public GameObject player;
 
