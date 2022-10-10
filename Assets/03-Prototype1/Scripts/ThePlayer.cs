@@ -32,6 +32,14 @@ public class ThePlayer : MonoBehaviour
         rb.AddForce(movement * speed);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Capsule"))
+        {
+            other.gameObject.SetActive(false);
+        }
+
+    }
     // Update is called once per frame
     void Update()
     {
